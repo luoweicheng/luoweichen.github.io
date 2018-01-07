@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动态－News</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	<!--轮播图的js文件-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+            auto:true,
+            autoControls: true,
+          });
+          $('.news').bxSlider({
+            auto: true, 
+        
+          });
+		});
+	</script>
+</head>
+<body>
+	<div class="containor">
+	<!--logo及搜索框-->
+	  <div class="north">
+	  <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+	  
+	  <div class="clear"></div>
+	</div>
+    <!--分享-->
+  <div class="sns-share"> 
+      <a href="" class="qq"><i class="icon iconfont icon-qq"></i></a>
+      <a href="" class="weibo"><i class="icon iconfont icon-weibo"></i></a>
+      <a href="" class="wechat"><i class="icon iconfont icon-wechat"></i></a>
+  </div>
+      <!--菜单导航条-->
+    <ul class="nav">
+        <li class="li1 len1 nav_li_01"><a href="News.html" t1="News" t2="动态">News</a></li>
+        <li class="li1 arrbox arrbox2 len2 nav_li_03">
+       
+
+        </li>
+        <li class="li1 len1 nav_li_04"><a href="Partnership.html" t1="Partnership" t2="合作">Partnership</a></li>
+        <li class="li1 len1 nav_li_05"><a href="Contact.html" t1="Contact" t2="联系">Contact</a></li>
+        <li class="li1 len1 nav_li_07"><a href="Recruitment.html" t1="Recruitment" t2="招聘">Recruitment</a></li>
+    </ul>
+    <!--轮播图-->
+    <ul class="bxslider">
+    <li><img src="img/banner01.png" /></li>
+    <li><img src="img/banner01.png" /></li>
+    <li><img src="img/banner01.png" /></li>
+    </ul>
+    <!--News 动态-->
+    <div class="newsdongtai">
+    <h3>News 动态</h3>
+    <div class="newsdongtai_xu"></div>
+    <ul class="news">
+        <!--动态01-->
+    	<li class="news_li">
+        <div class="news_div">
+        <h3 class="news_li_01">营业执照</h3>
+        <h3 class="news_li_02">BUSINESS LICENSE</h3>
+        </div>
+        <div class="news_div2">
+        </div>
+        <div class="news_img">
+        <a href=""><img src="img/news_01.png" alt=""></a>
+        </div>
+        <div class="news_p">
+   
+<p class="news_p_k">营业执照
+</p>
+<p class="news_p_f">2017年12月</p>
+</div>
+        </li>
+    	<!--动态02-->
+        <li class="news_li">
+        <div class="news_div">
+        <h3 class="news_li_01">营业执照</h3>
+        <h3 class="news_li_02">BUSINESS LICENSE</h3>
+        </div>
+        <div class="news_div2">
+        </div>
+        <div class="news_img">
+        <a href=""><img src="img/news_01.png" alt=""></a>
+        </div>
+        </li>
+       
+   
+    </ul>
+    </div>
+    
+    <!--联系我们-->
+    <div class="footer">
+    <div class="lianxi">
+    <h3>Contact  联系我们</h3>
+    <div class="lian_xu"></div>
+    <ul class="lian">
+    	<li>手机：18059873587</li>
+    	<li>QQ:120036732</li>
+    	<li>weixin:18059873587</li>
+    	<li>邮箱：120036732@qq.com</li>
+    	<li>地址：福建省厦门市海沧区渐美村卢坑社21号</li>
+    	<li>邮编：361026</li>
+    	<li>ADD:No.21, Lukeng society, Haicang village, Xiamen, Fujian</li>
+    	<li></li>
+    </ul>
+    <div class="ban_xu"></div>
+    <ul class="ban">
+    	
+    </ul>
+	</div>
+    </div>
+    <!--分享功能-->
+  <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+  <script src="js/share.js"></script>
+  <script>
+    $(function(){
+        var $config = {
+        url    : 'www.pushangcd.com', // 网址，默认使用 window.location.href
+        site   : '', // 来源（QQ空间会用到）, 默认读取head标签：<meta name="site" content="http://overtrue" />
+        title  : '这个是tittle', // 标题，默认读取 document.title
+        description : '', // 描述, 默认读取head标签：<meta name="description" content="PHP弱类型的实现原理分析" />
+        iamge    : '', // 图片, 默认取网页中第一个img标签
+        target : '_blank' //打开方式
+       };
+
+    $('.sns-share').share($config);
+    });
+</script>
+</body>
+</html>
